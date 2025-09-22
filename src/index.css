@@ -2,39 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Drive-to-Drive Cloner Design System - Google Drive inspired colors and modern aesthetics */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 255 255 255;
+    --foreground: 31 41 55;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 255 255 255;
+    --card-foreground: 31 41 55;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 255 255 255;
+    --popover-foreground: 31 41 55;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Google-inspired primary blue */
+    --primary: 219 89% 60%;
+    --primary-foreground: 255 255 255;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Soft secondary gray */
+    --secondary: 243 244 246;
+    --secondary-foreground: 55 65 81;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 249 250 251;
+    --muted-foreground: 107 114 128;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Google Drive green accent */
+    --accent: 142 71% 45%;
+    --accent-foreground: 255 255 255;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 239 68% 68%;
+    --destructive-foreground: 255 255 255;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 229 231 235;
+    --input: 243 244 246;
+    --ring: 219 89% 60%;
+
+    /* Custom Drive-themed colors */
+    --drive-blue: 219 89% 60%;
+    --drive-blue-hover: 219 89% 55%;
+    --drive-green: 142 71% 45%;
+    --drive-green-hover: 142 71% 40%;
+    --drive-red: 239 68% 68%;
+    --drive-yellow: 45 93% 58%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(219 89% 60%), hsl(142 71% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(219 89% 60% / 0.1), hsl(142 71% 45% / 0.1));
+    --gradient-card: linear-gradient(145deg, hsl(255 255 255), hsl(248 250 252));
+    
+    /* Shadows */
+    --shadow-soft: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px 0 hsl(0 0% 0% / 0.06);
+    --shadow-medium: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.06);
+    --shadow-large: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -2px hsl(0 0% 0% / 0.05);
+    --shadow-glow: 0 0 20px hsl(219 89% 60% / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --radius: 0.5rem;
 
